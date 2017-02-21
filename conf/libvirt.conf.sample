@@ -1,10 +1,10 @@
+#This is an example, use your custom vars, plugin_key is required
+
 {
-	"database": {
-		"name": "uwsgi",
-		"duration": "365d",
-		"replication": "1"
+	"foo": {
+		"var": "example",
+		"var2": "1"
 	},
-	"hostname": "localhost",
-	"port": 9797,
-	"frequency": 0.2
+	"bar": 9797,
+	"plugin_key": UUID #Provided by sentinel.la
 }

@@ -10,10 +10,10 @@ frequency = 60
 hostname = os.uname()[1].split('.')[0]
 
 @asyncio.coroutine
-def get_libvirt_stats(agent):
+def get_stats(agent):
     yield From(agent.run_event.wait())
     config = agent.config['libvirt']
-    logger.info('starting "get_libvirt_stats" task for "%s"', hostname)
+    logger.info('starting "get_stats" task for "%s"', hostname)
 
     while agent.run_event.is_set():
         yield From(asyncio.sleep(frequency))
@@ -22,7 +22,7 @@ def get_libvirt_stats(agent):
                     'measurements': []}
             logger.debug('connecting to libvirt')
             
-            # [START] To be completed with libvirt code
+            # [START] To be completed with plugin code
             '''
             Example:
             
@@ -48,4 +48,4 @@ def get_libvirt_stats(agent):
         except:
             logger.exception('cannot get the libvirt information')
 
-    logger.info('get_libvirt_stats terminated')
+    logger.info('get_stats terminated')
