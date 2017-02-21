@@ -1,4 +1,4 @@
 Measurements
 ************
 
-sentinella-libvirt collects metrics about instances.
+sentinella-myplugin collects metrics about instances.

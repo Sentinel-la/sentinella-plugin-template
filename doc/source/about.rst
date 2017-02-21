@@ -3,10 +3,10 @@ About Sentinel.la
 
 A Python agent for collecting OpenStack metrics, logs and specs and store them into Sentinel.la.
 
-What is sentinella-libvirt
+What is sentinella-myplugin
 ==========================
 
-sentinella-libvirt is a Sentinel.la plugin that can collect metrics from libvirt.
+sentinella-myplugin is a Sentinel.la plugin that can collect metrics from myplugin.
 
 -----
 

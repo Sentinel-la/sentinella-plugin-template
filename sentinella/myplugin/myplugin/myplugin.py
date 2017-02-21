@@ -12,7 +12,7 @@ hostname = os.uname()[1].split('.')[0]
 @asyncio.coroutine
 def get_stats(agent):
     yield From(agent.run_event.wait())
-    config = agent.config['libvirt']
+    config = agent.config['myplugin']
     logger.info('starting "get_stats" task for "%s"', hostname)
 
     while agent.run_event.is_set():
@@ -20,32 +20,33 @@ def get_stats(agent):
         try:
             data = {'server_name': hostname,
                     'measurements': []}
-            logger.debug('connecting to libvirt')
+            logger.debug('connecting to data source')
             
             # [START] To be completed with plugin code
+            # Here goes your logic
             '''
             Example:
             
             instance = ''
             value = ''
-            data['measurements'].append({'name': 'libvirt.cpu',
+            data['measurements'].append({'name': 'myplugin.cpu',
                                          'tags': {'instance': instance},
                                          'value': value})
                                          
-            data['measurements'].append({'name': 'libvirt.mem',
+            data['measurements'].append({'name': 'myplugin.mem',
                                          'tags': {'instance': instance},
                                          'value': value})
                                          
-            data['measurements'].append({'name': 'libvirt.iops',
+            data['measurements'].append({'name': 'myplugin.iops',
                                          'tags': {'instance': instance},
                                          'value': value})
 
             '''
-            # [END] To be completed with libvirt code
+            # [END] To be completed with plugin code
             
-            logger.debug('{}: libvirt={}%'.format(hostname, data))
+            logger.debug('{}: myplugin={}%'.format(hostname, data))
             yield From(agent.async_push(data))
         except:
-            logger.exception('cannot get the libvirt information')
+            logger.exception('cannot get data source information')
 
     logger.info('get_stats terminated')

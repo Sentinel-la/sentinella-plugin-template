@@ -5,6 +5,6 @@ Using sentinella
 ================
 
 
-To install sentinella-libvirt at a command prompt type: ::
+To install sentinella-myplugin at a command prompt type: ::
 
-	$ sudo -i sentinella install sentinella-libvirt
+	$ sudo -i sentinella install sentinella-myplugin

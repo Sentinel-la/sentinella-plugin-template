@@ -53,7 +53,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'tourbillon-libvirt'
+project = 'sentinella-myplugin'
 copyright = '2016, The Sentinel.la Team'
 author = 'The Sentinel.la Team'
 
@@ -235,7 +235,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'SentinellaLibvirtPlugin.tex', 'sentinella-libvirt Documentation',
+  (master_doc, 'SentinellaMyPlugin.tex', 'sentinella-myplugin Documentation',
    'The Sentinel.la Team', 'manual'),
 ]
 
@@ -265,7 +265,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'sentinellalibvirtplugin', 'sentinella-libvirt Documentation',
+    (master_doc, 'sentinellaMyplugin', 'sentinella-myplugin Documentation',
      [author], 1)
 ]
 
@@ -279,7 +279,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'SentinellaLibvirtPlugin', 'sentinella-libvirt Documentation',
+  (master_doc, 'SentinellaLibvirtPlugin', 'sentinella-myplugin Documentation',
    author, 'SentinellaLibvirtPlugin', 'One line description of project.',
    'Miscellaneous'),
 ]

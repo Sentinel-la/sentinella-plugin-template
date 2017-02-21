@@ -17,9 +17,9 @@ setup(
     zip_safe=False,
     namespace_packages=['sentinella'],
     install_requires=install_requires,
-    author='The Sentinel.la Team',
-    author_email='francisco@sentinel.la',
-    url='https://github.com/Sentinel-la/sentinella-libvirt',
+    author='My Name',
+    author_email='email@domain.com',
+    url='https://github.com/Sentinel-la/sentinella-plugin',
     license='ASF',
     classifiers=[
         'Development Status :: 4 - Beta',
