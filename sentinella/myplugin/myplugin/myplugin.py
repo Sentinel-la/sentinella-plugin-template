@@ -15,15 +15,14 @@ def get_stats(agent):
     yield From(agent.run_event.wait())
 
     """
-    Configuration file in sentinella-pluging-template/conf/
-    when you install yuour plugin this file must be in 
-    /etc/sentinella/conf.d/
+    After plugin installation, copy the configuration file
+    from sentinella-plugin-template/conf/ to /etc/sentinella/conf.d/
     """
     config = agent.config['test']
     
     """
-    Plugin key is unique in Sentinella if not is valid plugin key
-    your metrics never are register.
+    The plugin Key is a unique UUID provided by Sentinel.la.
+    If not valid, the plugin metrics will never be registered.
     """
 
     plugin_key = config['plugin_key']
