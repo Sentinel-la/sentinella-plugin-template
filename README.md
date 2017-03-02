@@ -6,7 +6,7 @@
 
 sentinella-plugin-template is a Sentinel.la plugin template that can collect metrics from the service you specify into Sentinel.la.
 
-![Sentinel.la](http://sentinel.la/images/logo-large.png)
+![Sentinel.la](https://www.sentinel.la/wp-content/uploads/2017/03/Sentinella.logo-02.png)
 
 -----
 
