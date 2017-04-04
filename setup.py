@@ -2,7 +2,7 @@ import sys
 from setuptools import setup, find_packages
 
 
-exclude = ['sentinella.myplugin.myplugin']
+exclude = ['sentinella.myplugin']
 
 install_requires = []
 
