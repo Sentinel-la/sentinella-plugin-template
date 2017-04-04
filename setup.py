@@ -1,13 +1,9 @@
-import sys
 from setuptools import setup, find_packages
 
 
-exclude = ['sentinella.myplugin']
+exclude = ['myplugin']
 
-install_requires = []
-
-install_requires.append('trollius==2.0')
-
+install_requires = ['trollius==2.0']
 
 setup(
     name='sentinella-myplugin',
