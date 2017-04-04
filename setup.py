@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 
-exclude = ['sentinella.myplugin.myplugin']
+exclude = ['myplugin']
 
 install_requires = ['trollius==2.0']
 
