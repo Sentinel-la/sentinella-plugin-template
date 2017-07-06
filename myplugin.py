@@ -48,11 +48,11 @@ def get_stats(agent):
             """
             data['plugins'].update({"{}".format(plugin_key): {}})
 
-            data['plugins'][plugin_key].update({"metric_1": {"value": 100, "type": "integer"}})
+            data['plugins'][plugin_key].update({"metric_1": {"row_name":"Row name 1","metric_name":"metric1","value": 100, "type": "integer"}})
 
-            data['plugins'][plugin_key].update({"metric_2": {"value": 3.5, "type": "percent"}})
+            data['plugins'][plugin_key].update({"metric_2": {"row_name":"Row name 2","metric_name":"metric2","value": 3.5, "type": "percent"}})
 
-            data['plugins'][plugin_key].update({"metric_3": {"value": 1, "type": "binary"}})
+            data['plugins'][plugin_key].update({"metric_3": {"row_name":"Row name 3","metric_name":"metric3","value": 1, "type": "binary"}})
 
             logger.debug('{}: myplugin={}%'.format(hostname, data))
 
